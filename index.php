@@ -71,6 +71,13 @@ class MacSaver
     {
         if (empty($this->_bq))
         {
+            // Key file path hanya digunakan jika function dijalankan di localhost
+            // Cara mendapatkannya:
+            // 1. APIs & Services -> Credentials
+            // 2. Create credentials -> Service account key
+            // 3. Pilih role BigQuery Data Owner -> JSON -> Create
+            // 4. Pilih Keys -> Create New Key -> JSON
+            // 5. Simpan file JSON ke dalam project
             $this->_bq = new BigQueryClient([
                 'keyFilePath' => self::KEY_FILE_PATH, // Hapus baris ini jika function akan di-deploy ke GCP
                 'projectId' => self::PROJECT_ID
