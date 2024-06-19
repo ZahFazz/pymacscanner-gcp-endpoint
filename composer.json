@@ -9,6 +9,11 @@
     "start": [
       "Composer\\Config::disableProcessTimeout",
       "FUNCTION_TARGET=pymacscannerEndpoint php -S localhost:${PORT:-8080} vendor/google/cloud-functions-framework/router.php"
+    ],
+    "start-windows": [
+      "Composer\\Config::disableProcessTimeout",
+      "FUNCTION_TARGET=pymacscannerEndpoint",
+      "php -S localhost:8080 vendor/google/cloud-functions-framework/router.php"
     ]
   }
 }
