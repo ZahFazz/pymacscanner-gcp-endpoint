@@ -49,10 +49,10 @@ function pymacscannerEndpoint(ServerRequestInterface $request): string
 
 class MacSaver
 {
-    const KEY_FILE_PATH = 'YOUR-KEY-FILE.json';
-    const PROJECT_ID = 'YOUR-PROJECT-ID';
-    const DATASET_ID = 'YOUR-DATASET-ID';
-    const TABLE_ID = 'YOUR-TABLE-ID';
+    const KEY_FILE_PATH = 'lecturer-attending-2dd976c96c7a.json';
+    const PROJECT_ID = 'lecturer-attending';
+    const DATASET_ID = 'scannmap';
+    const TABLE_ID = 'scanned';
 
     private string $_scannerId;
     private string $_scanTime;
@@ -71,15 +71,8 @@ class MacSaver
     {
         if (empty($this->_bq))
         {
-            // Key file path hanya digunakan jika function dijalankan di localhost
-            // Cara mendapatkannya:
-            // 1. APIs & Services -> Credentials
-            // 2. Create credentials -> Service account key
-            // 3. Pilih role BigQuery Data Owner -> JSON -> Create
-            // 4. Pilih Keys -> Create New Key -> JSON
-            // 5. Simpan file JSON ke dalam project
             $this->_bq = new BigQueryClient([
-                'keyFilePath' => self::KEY_FILE_PATH, // Hapus baris ini jika function akan di-deploy ke GCP
+              //  'keyFilePath' => self::KEY_FILE_PATH, // Hapus baris ini jika function akan di-deploy ke GCP
                 'projectId' => self::PROJECT_ID
             ]);
         }
@@ -141,6 +134,17 @@ class MacSaver
 
         // Create insert command
         $insertResponse = $table->insertRows($data);
+        $replaceViewConfig = $bigQuery->query(
+            'CREATE OR REPLACE VIEW `lecturer-attending.scannmap.scanned_latest`
+            AS
+            SELECT *
+            FROM `lecturer-attending.scannmap.scanned`
+            WHERE timestamp = (
+                SELECT MAX(timestamp) 
+                FROM `lecturer-attending.scannmap.scanned`
+            );'
+        );
+        $replaceView = $bigQuery->runQuery($replaceViewConfig);
 
         // Return proper response based on insert response
         return self::createResponse($insertResponse);
