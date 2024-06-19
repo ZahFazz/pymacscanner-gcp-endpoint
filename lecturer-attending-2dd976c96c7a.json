@@ -1,13 +1,3 @@
 {
-  "type": "service_account",
-  "project_id": "lecturer-attending",
-  "private_key_id": "2dd976c96c7add4a682539f2abd8f3b4d94b94ac",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDaOxyGXH85J4t6\nGkdxGOVIolGFW2GkafttyD93rgyo/qIE5qai0XUJgup6zsjqAlzSTaokCNAWFv14\n0GKiL5IrW0Ef5THv4z2H1cIC3XN+IPYewXyRbpUsx4UjhcTXnqcGfBq8ROKsUR43\nG6W3M8Rnj85GcRJL+3V30rtbqSVzo35rrrE0a/Uq/NWAYWxvatdms9AyzmTJIG4F\n35Dr441nzefPofRvUvN5hVp1xYGnGsOuL3CUcox9cMIYCcaF3foHj15MpuImLpUf\nksh+GJ4ieym3XdCtqmQMqvFploeM2IEi1WMsFBQnwPjZjtHEqYMe3nPhrqjmMzlH\n9I03BRvjAgMBAAECggEAM/aBS0j5Di3pWzCotDheWBY2XQ+uR0zpDnHxEtlBsHe5\nMnuNUBWZzaL7nDRiyL25RmYxzhS/H5Nn1X2hDsdPAb3f2u1jH6C3RQHUCYSbfHvy\nvs4JkEOJh7kWbafrgAAJ+1RPtWadprRGAo81vVK5QIOQdVt1JNyCUv69mAzFmyvx\nXUcJsoj4fAFAW9S7MXuLNGHMDRkKf7g2+QdH+sggLsy6xa7KCx8W7NvZuZmHpZwB\nLyEeZC4uSzwpOZJYfOLCAQm41nSPpCultDzLjvjJevpIj6db4XuqPd4HmVRNp/Kl\ndi0WvFJjYyoYPmFLyECxVckHc3SAXlEwzwUzbd1B6QKBgQDtDuzMG+zJANbO5wg7\nLJ966G2OmvpK7hjOYzQ9HrxCT/WEezrI5ZEvngTmAYn0cm8GTpY58UJn2QgbSxd0\nBXMKAFxp3SncwfwHVONY332ssRd6EGJySujzTrdchw/IoiC6Bn1cGaM9He8IgD0+\nBoo+T28u26JW5nY/YryRmWX13QKBgQDrqxF52MkC10InhcJltEWmN/I5A9ZngR5h\n4g3SpM/WwAffAA5CbK9f0hKUv4LPk/1Xcm0sgrrGJIIJ+SHc7FeZEY4aYJo8nXI5\nRmuFzYz5ndFpC9MihsnYIkvhzVD4bb1ZSDwO/SlV2zjTBn9T96nACWubgLm5WntB\nc1XEWKCcvwKBgQCj+EXcbJhc9CKg3Hb6D0SEjE5zbEkiGQy5fS7988t+BrapG1+u\n4/OHv0JeIcRde+XFtAf/LhyjniAYWNlxG+/VhChn5V12YAtGuvXCXFweXiQB/2FI\n8v2shc8YxicpvNLsOV7unKEnvhO/ioxR4c4viVw7ShpBB4nVECOkhjlbVQKBgQCN\ncYDtpqUOZW+5FNjV/dqHprBkc98tBBveF7TAJlbvxxVyTDBCwcSIOCcay86RE3tM\nDstjmZrL7YF2xuYCGH+CyTyGrFAl7UFvCsrh5bqk3omfCI/R+yAN7peokHf2grbQ\nbUBOprc2Znq2fQHSvaROM9k33YyaqKmtYLGrRJ4xNQKBgDfqqVYrN5W6tSGf85/k\nYmmjo4yx3PeyRTSydcKWVTWejdk3Pmkw7snQ5whhOL+zSVaITtwpMSKjQ0vEiUSa\n0RWThTdLP24Aff3C40d8PSYDktF2NkProLFUqIrXBrPsh3Kndw68OdXJCmGxgZAC\n60SHZBQbGH0wGrm6/0Vu33hL\n-----END PRIVATE KEY-----\n",
-  "client_email": "inputdata@lecturer-attending.iam.gserviceaccount.com",
-  "client_id": "105673035814672446941",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/inputdata%40lecturer-attending.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+  JSON file containing the BigQuery service account key.
 }
